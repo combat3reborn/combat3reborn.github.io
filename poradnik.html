@@ -51,214 +51,239 @@
     <h1>Poradnik <span>konfiguracji</span></h1>
     <p class="subtitle">
       Pobierz Combat 3 Pack, uruchom plik gry przez UniPlayer lub GameLoad
-      oraz - gdy używasz starszych buildów - skonfiguruj plik hosts.
+      oraz - gdy używasz nowszych buildów - skonfiguruj plik hosts.
     </p>
   </section>
-
   <main>
 
-    <div class="glass-card">
-      <h2>🎮 Combat 3 Pack i UniPlayer</h2>
-      <p>
-        Na stronie <a href="https://combat3reborn.github.io/play.html" target="_blank" rel="noopener" style="color:var(--accent);">Graj teraz</a>
-        znajdziesz paczkę <strong>Combat 3 Pack</strong>. Zawiera ona pliki gry w formacie
-        <code>.unity3d</code> oraz program <strong>UniPlayer</strong>, dzięki któremu możesz uruchomić build Unity Web Player lokalnie.
-      </p>
-      <p style="margin-top:10px;">
-        Nie musisz uruchamiać gry w Basilisk Browserze. Wystarczy pobrać paczkę, rozpakować ją
-        i wybrać plik gry `.unity3d` w UniPlayerze. Alternatywnie możesz użyć aplikacji
-        <strong>GameLoad</strong>, która również pozwala uruchamiać pliki `.unity3d` za pomocą UniPlayera.
-      </p>
+  <!-- ==================== METODA I ==================== -->
+  <div class="glass-card">
+    <span class="badge badge-info">Metoda I</span>
+    <h2 style="margin-top:12px;">Combat 3 Pack: pliki .unity3d, UniPlayer i GameLoad</h2>
+    <p>
+      Ta metoda jest przeznaczona dla plików gry w formacie <code>.unity3d</code> z paczki
+      <strong>Combat 3 Pack</strong>. Do ich uruchamiania możesz użyć programu
+      <strong>UniPlayer</strong> albo aplikacji <strong>GameLoad</strong>.
+    </p>
+    <p style="margin-top:10px;">
+      W przypadku plików <code>.unity3d</code> z paczki wymagane jest przekierowanie adresów
+      serwerów w pliku <code>hosts</code>, dlatego wykonaj wszystkie kroki z Metody I.
+    </p>
 
-      <div class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
-        <a href="https://combat3reborn.github.io/play.html" target="_blank" rel="noopener" class="btn btn-primary">
-          ⬇️ Przejdź do Combat 3 Pack
-        </a>
+    <div class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
+      <a href="pobieranie.html" class="btn btn-primary">Pobierz Combat 3 Pack</a>
+    </div>
+  </div>
+
+  <div class="glass-card">
+    <span class="badge badge-info">Metoda I</span>
+    <h2 style="margin-top:12px;">Instrukcja krok po kroku</h2>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Pobierz Combat 3 Pack</h4>
+        <p>
+          Otwórz podstronę <a href="pobieranie.html" style="color:var(--accent);">Pobieranie</a>
+          i pobierz paczkę <strong>Combat 3 Pack</strong>. W paczce znajdują się pliki gry
+          <code>.unity3d</code> oraz UniPlayer.
+        </p>
       </div>
     </div>
 
-    <div class="glass-card">
-      <h2> Po co edytować plik hosts?</h2>
-      <p>
-        Plik <code>hosts</code> pozwala ręcznie przypisać adres domeny do konkretnego adresu IP,
-        z pominięciem standardowych serwerów DNS. Jest to potrzebne głównie podczas używania
-        innych, starszych lub niezmodyfikowanych wersji Combat 3, które wciąż próbują połączyć się
-        z oryginalnymi adresami serwerów.
-      </p>
-
-      <p style="margin-top:10px;">
-        Build udostępniony obecnie na stronie Combat 3 Reborn ma zmodyfikowane adresy serwerów,
-        dlatego zwykle <strong>nie wymaga edycji pliku hosts</strong>. Jeżeli jednak uruchamiasz
-        inny plik `.unity3d` z paczki albo własny starszy build gry, wykonaj kroki poniżej.
-      </p>
-
-      <div class="code-block" data-label="przekierowania do dodania">
-82.208.22.35    combat3.com<br>
-82.208.22.35    mapas.combat3.com
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Rozpakuj archiwum</h4>
+        <p>
+          Kliknij pobrany plik prawym przyciskiem myszy i wybierz
+          <strong>„Wyodrębnij wszystko”</strong>. Możesz też użyć programu 7-Zip lub WinRAR.
+          Zapamiętaj folder, do którego wypakowałeś Combat 3 Pack.
+        </p>
       </div>
     </div>
 
-    <div class="warning-box">
-      <div class="icon">🛡️</div>
-      <p>
-        Edycja pliku hosts wymaga uprawnień <strong>administratora</strong>.
-        Wprowadzaj zmiany tylko z zaufanych źródeł - nieprawidłowe wpisy mogą wpłynąć
-        na działanie połączenia internetowego.
-      </p>
-    </div>
-
-    <div class="glass-card">
-      <h2>📖 Instrukcja krok po kroku</h2>
-
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-content">
-          <h4>Pobierz Combat 3 Pack</h4>
-          <p>
-            Otwórz stronę
-            <a href="https://combat3reborn.github.io/play.html" target="_blank" rel="noopener" style="color:var(--accent);">Graj teraz</a>
-            i pobierz paczkę <strong>Combat 3 Pack</strong>. W paczce znajdują się pliki gry
-            `.unity3d` oraz UniPlayer.
-          </p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-content">
-          <h4>Rozpakuj pobrane archiwum</h4>
-          <p>
-            Kliknij pobrany plik prawym przyciskiem myszy i wybierz
-            <strong>„Wyodrębnij wszystko”</strong>, lub użyj 7-Zip / WinRAR.
-            Zapamiętaj folder, do którego wypakowałeś Combat 3 Pack.
-          </p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-content">
-          <h4>Uruchom plik gry przez UniPlayer</h4>
-          <p>
-           Wybierz odpowiedni plik .unity 3d i otwórz go za pomocą <strong>UniPlayer</strong>.
-            UniPlayer załaduje wybrany build lokalnie. Wadą UniPlayera jest to, że się wyłącza po naciśnięciu CTRL + W
-          </p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-content">
-          <h4>Alternatywa: użyj aplikacji GameLoad</h4>
-          <p>
-            Zamiast otwierać plik w UniPlayerze możesz użyć aplikacji
-            <strong>GameLoad</strong>.
-            Zaletą jest to, że aplikacja się nie wyłącza po naciśnięciu CTRL + W. 
-          </p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">5</div>
-        <div class="step-content">
-          <h4>Otwórz Notatnik jako administrator</h4>
-          <p>
-            Ten krok wykonaj tylko wtedy, gdy używany build wymaga przekierowania serwerów.
-            Kliknij Start, wpisz <code>Notatnik</code>, kliknij wynik prawym przyciskiem myszy
-            i wybierz <strong>„Uruchom jako administrator”</strong>.
-          </p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">6</div>
-        <div class="step-content">
-          <h4>Otwórz plik hosts</h4>
-          <p>
-            W Notatniku wybierz <strong>Plik → Otwórz</strong>. Zmień filtr na
-            <strong>„Wszystkie pliki”</strong>, a następnie otwórz:
-          </p>
-
-          <div class="code-block" data-label="ścieżka">
-C:\Windows\System32\drivers\etc\hosts
-          </div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">7</div>
-        <div class="step-content">
-          <h4>Dodaj wpisy przekierowania</h4>
-          <p>
-            Na końcu pliku hosts dodaj poniższe wpisy. Każdy musi znajdować się w osobnej linii:
-          </p>
-
-          <div class="code-block" data-label="hosts">
-82.208.22.35    combat3.com<br>
-82.208.22.35    mapas.combat3.com
-          </div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">8</div>
-        <div class="step-content">
-          <h4>Zapisz plik</h4>
-          <p>
-            Wybierz <strong>Plik → Zapisz</strong> albo użyj skrótu <code>Ctrl + S</code>.
-            Jeśli pojawi się błąd zapisu, zamknij Notatnik i uruchom go ponownie jako administrator.
-          </p>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">9</div>
-        <div class="step-content">
-          <h4>Wyczyść pamięć podręczną DNS</h4>
-          <p>
-            Otwórz Wiersz poleceń jako administrator i wpisz komendę poniżej, aby Windows
-            od razu zaczął używać nowych wpisów:
-          </p>
-
-          <div class="code-block" data-label="cmd">
-ipconfig /flushdns
-          </div>
-        </div>
-      </div>
-
-      <div class="step">
-        <div class="step-num">10</div>
-        <div class="step-content">
-          <h4>Uruchom grę</h4>
-          <p>
-            Wróć do UniPlayera lub GameLoad i uruchom wybrany plik <code>.unity3d</code>.
-            Jeśli dany build korzysta z wpisów hosts, powinien teraz próbować połączyć się
-            z serwerami Combat 3 Reborn.
-          </p>
-        </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Otwórz plik gry w UniPlayerze</h4>
+        <p>
+          Wybierz plik gry z rozszerzeniem <code>.unity3d</code> i otwórz go za pomocą
+          <strong>UniPlayera</strong>. Program załaduje wybrany build lokalnie.
+          Pamiętaj, że UniPlayer może zamknąć się po użyciu skrótu <code>Ctrl + W</code>.
+        </p>
       </div>
     </div>
 
-    <div class="glass-card">
-      <h2> Rozwiązywanie problemów</h2>
-
-      <ul>
-        <li><strong>Nie widzę pliku .unity3d</strong> - upewnij się, że archiwum Combat 3 Pack zostało w pełni rozpakowane.</li>
-        <li><strong>UniPlayer nie otwiera gry</strong> - spróbuj uruchomić program jako administrator i ponownie wskaż właściwy plik `.unity3d`.</li>
-        <li><strong>Notatnik nie pozwala zapisać pliku hosts</strong> - uruchom Notatnik prawym przyciskiem myszy jako administrator.</li>
-        <li><strong>Plik hosts nie jest widoczny</strong> - w oknie otwierania pliku zmień filtr z „Dokumenty tekstowe” na „Wszystkie pliki”.</li>
-        <li><strong>Gra nadal się nie łączy</strong> - sprawdź wpisy IP, wykonaj `ipconfig /flushdns` i upewnij się, że build faktycznie wymaga konfiguracji hosts.</li>
-      </ul>
-
-      <p style="margin-top:14px;">
-        Jeśli problem nie ustępuje, opisz go na naszym
-        <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" style="color:var(--accent);">serwerze Discord</a>.
-        W wiadomości podaj nazwę uruchamianego buildu `.unity3d`, wersję Windows oraz treść ewentualnego błędu.
-      </p>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Alternatywa: GameLoad</h4>
+        <p>
+          Zamiast otwierać build bezpośrednio w UniPlayerze możesz użyć aplikacji
+          <strong>GameLoad</strong>. Pozwala ona uruchamiać pliki <code>.unity3d</code>
+          i nie zamyka aplikacji po naciśnięciu <code>Ctrl + W</code>.
+        </p>
+      </div>
     </div>
 
-  </main>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>Otwórz Notatnik jako administrator</h4>
+        <p>
+          Kliknij Start, wpisz <code>Notatnik</code>, kliknij wynik prawym przyciskiem myszy
+          i wybierz <strong>„Uruchom jako administrator”</strong>.
+        </p>
+      </div>
+    </div>
 
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <h4>Otwórz plik hosts</h4>
+        <p>
+          W Notatniku wybierz <strong>Plik → Otwórz</strong>. Zmień filtr plików na
+          <strong>„Wszystkie pliki”</strong>, a następnie otwórz plik pod tą ścieżką:
+        </p>
+        <div class="code-block" data-label="ścieżka">C:\Windows\System32\drivers\etc\hosts</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">7</div>
+      <div class="step-content">
+        <h4>Dodaj wpisy przekierowania</h4>
+        <p>Na końcu pliku <code>hosts</code> dodaj poniższe wpisy, każdy w osobnej linii:</p>
+        <div class="code-block" data-label="hosts">82.208.22.35    combat3.com<br>82.208.22.35    mapas.combat3.com</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">8</div>
+      <div class="step-content">
+        <h4>Zapisz plik hosts</h4>
+        <p>
+          Wybierz <strong>Plik → Zapisz</strong> albo użyj skrótu <code>Ctrl + S</code>.
+          Jeżeli pojawi się błąd zapisu, sprawdź, czy Notatnik został uruchomiony jako administrator.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">9</div>
+      <div class="step-content">
+        <h4>Wyczyść pamięć podręczną DNS</h4>
+        <p>Otwórz Wiersz poleceń jako administrator i wpisz:</p>
+        <div class="code-block" data-label="cmd">ipconfig /flushdns</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">10</div>
+      <div class="step-content">
+        <h4>Uruchom grę</h4>
+        <p>
+          Wróć do UniPlayera albo GameLoad i uruchom wybrany plik <code>.unity3d</code>.
+          Gra powinna teraz korzystać z serwerów Combat 3 Reborn.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <div class="icon">Zapamiętaj</div>
+    <p>
+      Edycja pliku <code>hosts</code> wymaga uprawnień administratora. Zmieniaj ten plik tylko
+      zgodnie z instrukcją i wyłącznie wtedy, gdy używasz plików <code>.unity3d</code> z Combat 3 Pack.
+    </p>
+  </div>
+
+  <!-- ==================== METODA II ==================== -->
+  <div class="glass-card">
+    <span class="badge badge-live">Metoda II</span>
+    <h2 style="margin-top:12px;">Combat3.exe - najprostszy sposób</h2>
+    <p>
+      Jeśli nie chcesz korzystać z UniPlayera, GameLoada ani edytować pliku <code>hosts</code>,
+      pobierz wersję <strong>Combat3.exe</strong> z podstrony Pobieranie.
+    </p>
+    <p style="margin-top:10px;">
+      Ta wersja ma już zmodyfikowane w kodzie gry adresy serwerów Combat 3 Reborn,
+      dlatego <strong>nie wymaga żadnej edycji pliku hosts</strong>.
+    </p>
+
+    <div class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
+      <a href="pobieranie.html" class="btn btn-primary">Przejdź do pobierania Combat3.exe</a>
+    </div>
+  </div>
+
+  <div class="glass-card">
+    <span class="badge badge-live">Metoda II</span>
+    <h2 style="margin-top:12px;">Instrukcja krok po kroku</h2>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Przejdź na stronę Pobieranie</h4>
+        <p>
+          Otwórz podstronę <a href="pobieranie.html" style="color:var(--accent);">Pobieranie</a>
+          i znajdź plik <strong>Combat3.exe</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Pobierz Combat3.exe</h4>
+        <p>
+          Pobierz plik <code>Combat3.rar</code> na komputer. Po zakończeniu pobierania
+          możesz przenieść go do dowolnego wybranego folderu.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Uruchom grę</h4>
+        <p>
+          Wypakuj instalator <code>Combat3.exe</code>.Uruchom go i przejdź przez proces instalacji.
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Graj bez konfiguracji hosts</h4>
+        <p>
+          Gotowe - wersja <code>.exe</code> ma już ustawione adresy serwerów w kodzie gry.
+          Nie instaluj UniPlayera, nie używaj GameLoada i nie dodawaj wpisów do pliku
+          <code>hosts</code> tylko po to, aby uruchomić tę wersję.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="glass-card">
+    <h2>Rozwiązywanie problemów</h2>
+    <ul>
+      <li><strong>Nie widzę pliku .unity3d</strong> - upewnij się, że archiwum Combat 3 Pack zostało całkowicie rozpakowane.</li>
+      <li><strong>UniPlayer nie otwiera gry</strong> - uruchom program jako administrator i wskaż właściwy plik <code>.unity3d</code>.</li>
+      <li><strong>Nie mogę zapisać pliku hosts</strong> - uruchom Notatnik jako administrator.</li>
+      <li><strong>Plik hosts nie jest widoczny</strong> - w oknie otwierania pliku zmień filtr na „Wszystkie pliki”.</li>
+      <li><strong>Combat3.exe nie uruchamia się</strong> - spróbuj użyć opcji „Uruchom jako administrator” i sprawdź, czy program antywirusowy nie przeniósł pliku do kwarantanny.</li>
+    </ul>
+
+    <p style="margin-top:14px;">
+      Jeżeli problem nadal występuje, opisz go na naszym
+      <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" style="color:var(--accent);">serwerze Discord</a>.
+      Podaj nazwę używanego buildu, oraz jakim programem uruchamiasz grę.
+    </p>
+  </div>
+
+</main>
   <footer>
     <div class="nav-logo-wrap" style="justify-content:center;">
       <div class="nav-logo">
