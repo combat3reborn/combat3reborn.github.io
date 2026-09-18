@@ -6,19 +6,23 @@
 <link rel="icon" type="image/png" href="favicon.png" sizes="120x120">
   <title>Poradnik - konfiguracja pliku hosts | Combat 3 Reborn</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Bebas+Neue&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-glow"></div>
+  <section class="bg-photo"></section>
+  <section class="bg-grid"></section>
+  <section class="bg-glow"></section>
 
   <header class="navbar">
-    <div class="nav-logo-wrap">
-      <div class="nav-logo">
+    <section class="nav-logo-wrap">
+      <section class="nav-logo">
         <img src="logo.png" alt="Logotyp Combat 3 Reborn">
-      </div>
-      <div class="nav-title">Combat 3 <span>Reborn</span></div>
-    </div>
+      </section>
+      <section class="nav-title">Combat 3 <span>Reborn</span></section>
+    </section>
 
     <nav class="nav-links">
       <a href="index.html">Strona główna</a>
@@ -27,7 +31,7 @@
       <a href="pobieranie.html">Pobieranie</a>
     </nav>
 
-    <div class="nav-socials">
+    <section class="nav-socials">
       <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" title="Discord" class="social-icon social-discord">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
@@ -45,7 +49,7 @@
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
         </svg>
       </a>
-    </div>
+    </section>
   </header>
 
   <section class="hero" style="padding-top:50px; padding-bottom:20px;">
@@ -58,7 +62,7 @@
   <main>
 
   <!-- ==================== METODA I ==================== -->
-  <div class="glass-card">
+  <section class="glass-card">
     <span class="badge badge-info">Metoda I</span>
     <h2 style="margin-top:12px;">Combat 3 Pack: pliki .unity3d, UniPlayer i GameLoad</h2>
     <p>
@@ -71,137 +75,137 @@
       serwerów w pliku <code>hosts</code>, dlatego wykonaj wszystkie kroki z Metody I.
     </p>
 
-    <div class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
+    <section class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
       <a href="pobieranie.html" class="btn btn-primary">Pobierz Combat 3 Pack</a>
-    </div>
-  </div>
+    </section>
+  </section>
 
-  <div class="glass-card">
+  <section class="glass-card">
     <span class="badge badge-info">Metoda I</span>
     <h2 style="margin-top:12px;">Instrukcja krok po kroku</h2>
 
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">1</section>
+      <section class="step-content">
         <h4>Pobierz Combat 3 Pack</h4>
         <p>
           Otwórz podstronę <a href="pobieranie.html" style="color:var(--accent);">Pobieranie</a>
           i pobierz paczkę <strong>Combat 3 Pack</strong>. W paczce znajdują się pliki gry
           <code>.unity3d</code> oraz UniPlayer.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">2</section>
+      <section class="step-content">
         <h4>Rozpakuj archiwum</h4>
         <p>
           Kliknij pobrany plik prawym przyciskiem myszy i wybierz
           <strong>„Wyodrębnij wszystko”</strong>. Możesz też użyć programu 7-Zip lub WinRAR.
           Zapamiętaj folder, do którego wypakowałeś Combat 3 Pack.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">3</section>
+      <section class="step-content">
         <h4>Otwórz plik gry w UniPlayerze</h4>
         <p>
           Wybierz plik gry z rozszerzeniem <code>.unity3d</code> i otwórz go za pomocą
           <strong>UniPlayera</strong>. Program załaduje wybrany build lokalnie.
           Pamiętaj, że UniPlayer może zamknąć się po użyciu skrótu <code>Ctrl + W</code>.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">4</section>
+      <section class="step-content">
         <h4>Alternatywa: GameLoad</h4>
         <p>
           Zamiast otwierać build bezpośrednio w UniPlayerze możesz użyć aplikacji
           <strong>GameLoad</strong>. Pozwala ona uruchamiać pliki <code>.unity3d</code>
           i nie zamyka aplikacji po naciśnięciu <code>Ctrl + W</code>.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">5</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">5</section>
+      <section class="step-content">
         <h4>Otwórz Notatnik jako administrator</h4>
         <p>
           Kliknij Start, wpisz <code>Notatnik</code>, kliknij wynik prawym przyciskiem myszy
           i wybierz <strong>„Uruchom jako administrator”</strong>.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">6</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">6</section>
+      <section class="step-content">
         <h4>Otwórz plik hosts</h4>
         <p>
           W Notatniku wybierz <strong>Plik → Otwórz</strong>. Zmień filtr plików na
           <strong>„Wszystkie pliki”</strong>, a następnie otwórz plik pod tą ścieżką:
         </p>
-        <div class="code-block" data-label="ścieżka">C:\Windows\System32\drivers\etc\hosts</div>
-      </div>
-    </div>
+        <section class="code-block" data-label="ścieżka">C:\Windows\System32\drivers\etc\hosts</section>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">7</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">7</section>
+      <section class="step-content">
         <h4>Dodaj wpisy przekierowania</h4>
         <p>Na końcu pliku <code>hosts</code> dodaj poniższe wpisy, każdy w osobnej linii:</p>
-        <div class="code-block" data-label="hosts">82.208.22.35    combat3.com<br>82.208.22.35    mapas.combat3.com</div>
-      </div>
-    </div>
+        <section class="code-block" data-label="hosts">82.208.22.35    combat3.com<br>82.208.22.35    mapas.combat3.com</section>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">8</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">8</section>
+      <section class="step-content">
         <h4>Zapisz plik hosts</h4>
         <p>
           Wybierz <strong>Plik → Zapisz</strong> albo użyj skrótu <code>Ctrl + S</code>.
           Jeżeli pojawi się błąd zapisu, sprawdź, czy Notatnik został uruchomiony jako administrator.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">9</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">9</section>
+      <section class="step-content">
         <h4>Wyczyść pamięć podręczną DNS</h4>
         <p>Otwórz Wiersz poleceń jako administrator i wpisz:</p>
-        <div class="code-block" data-label="cmd">ipconfig /flushdns</div>
-      </div>
-    </div>
+        <section class="code-block" data-label="cmd">ipconfig /flushdns</section>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">10</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">10</section>
+      <section class="step-content">
         <h4>Uruchom grę</h4>
         <p>
           Wróć do UniPlayera albo GameLoad i uruchom wybrany plik <code>.unity3d</code>.
           Gra powinna teraz korzystać z serwerów Combat 3 Reborn.
         </p>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 
-  <div class="warning-box">
-    <div class="icon">Zapamiętaj</div>
+  <section class="warning-box">
+    <section class="icon">Zapamiętaj</section>
     <p>
       Edycja pliku <code>hosts</code> wymaga uprawnień administratora. Zmieniaj ten plik tylko
       zgodnie z instrukcją i wyłącznie wtedy, gdy używasz plików <code>.unity3d</code> z Combat 3 Pack.
     </p>
-  </div>
+  </section>
 
   <!-- ==================== METODA II ==================== -->
-  <div class="glass-card">
+  <section class="glass-card">
     <span class="badge badge-live">Metoda II</span>
     <h2 style="margin-top:12px;">Combat3.exe - najprostszy sposób</h2>
     <p>
@@ -213,61 +217,61 @@
       dlatego <strong>nie wymaga żadnej edycji pliku hosts</strong>.
     </p>
 
-    <div class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
+    <section class="hero-cta" style="margin-top:22px; opacity:1; animation:none;">
       <a href="pobieranie.html" class="btn btn-primary">Przejdź do pobierania Combat3.exe</a>
-    </div>
-  </div>
+    </section>
+  </section>
 
-  <div class="glass-card">
+  <section class="glass-card">
     <span class="badge badge-live">Metoda II</span>
     <h2 style="margin-top:12px;">Instrukcja krok po kroku</h2>
 
-    <div class="step">
-      <div class="step-num">1</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">1</section>
+      <section class="step-content">
         <h4>Przejdź na stronę Pobieranie</h4>
         <p>
           Otwórz podstronę <a href="pobieranie.html" style="color:var(--accent);">Pobieranie</a>
           i znajdź plik <strong>Combat3.exe</strong>.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">2</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">2</section>
+      <section class="step-content">
         <h4>Pobierz spakowany Combat3.exe</h4>
         <p>
           Pobierz plik <code>.rar</code> na komputer. Jest w nim instalator Combat3.exe. Po zakończeniu pobierania
           możesz przenieść go do dowolnego wybranego folderu.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">3</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">3</section>
+      <section class="step-content">
         <h4>Uruchom grę</h4>
         <p>
           Wypakuj instalator <code>Combat3.exe</code>.Uruchom go i przejdź przez proces instalacji.
         </p>
-      </div>
-    </div>
+      </section>
+    </section>
 
-    <div class="step">
-      <div class="step-num">4</div>
-      <div class="step-content">
+    <section class="step">
+      <section class="step-num">4</section>
+      <section class="step-content">
         <h4>Graj bez konfiguracji hosts</h4>
         <p>
           Gotowe - wersja <code>.exe</code> ma już ustawione adresy serwerów w kodzie gry.
           Nie instaluj UniPlayera, nie używaj GameLoada i nie dodawaj wpisów do pliku
           <code>hosts</code> tylko po to, aby uruchomić tę wersję.
         </p>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 
-  <div class="glass-card">
+  <section class="glass-card">
     <h2>Rozwiązywanie problemów</h2>
     <ul>
       <li><strong>Nie widzę pliku .unity3d</strong> - upewnij się, że archiwum Combat 3 Pack zostało całkowicie rozpakowane.</li>
@@ -282,23 +286,23 @@
       <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" style="color:var(--accent);">serwerze Discord</a>.
       Podaj nazwę używanego buildu, oraz jakim programem uruchamiasz grę.
     </p>
-  </div>
+  </section>
 
 </main>
   <footer>
-    <div class="nav-logo-wrap" style="justify-content:center;">
-      <div class="nav-logo">
+    <section class="nav-logo-wrap" style="justify-content:center;">
+      <section class="nav-logo">
         <img src="logo.png" alt="Logotyp Combat 3 Reborn">
-      </div>
-      <div class="nav-title">Combat 3 <span>Reborn</span></div>
-    </div>
+      </section>
+      <section class="nav-title">Combat 3 <span>Reborn</span></section>
+    </section>
 
     <p style="margin-top:14px;">
       Nieoficjalny projekt społecznościowy mający na celu przywrócenie gier Combat 3 i Combat 4.
       Niezwiązany z pierwotnymi twórcami gry.
     </p>
 
-    <div class="footer-socials">
+    <section class="footer-socials">
       <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" title="Discord" class="social-icon social-discord">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
@@ -316,7 +320,7 @@
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
         </svg>
       </a>
-    </div>
+    </section>
 
     <p>
       &copy; 2026 Combat 3 Reborn - projekt fanowski.
