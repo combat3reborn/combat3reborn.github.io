@@ -96,7 +96,6 @@ h1, h2, h3, h4 {
   to { transform: translate(-30px, 45px); }
 }
 
-/* ===== Navbar ===== */
 header.navbar {
   position: sticky;
   top: 0;
@@ -196,7 +195,7 @@ nav.nav-links a.active {
   background: var(--glass-bg-strong);
 }
 
-/* ===== Hero ===== */
+
 .hero {
   position: relative;
   z-index: 1;
@@ -284,7 +283,6 @@ nav.nav-links a.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== Buttons ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -339,7 +337,7 @@ nav.nav-links a.active {
   box-shadow: 0 10px 24px rgba(107,24,16,0.4);
 }
 
-/* ===== Cards / sections ===== */
+
 main {
   position: relative;
   z-index: 1;
@@ -414,7 +412,7 @@ main {
 .badge-warn { background: rgba(194,59,28,0.16); color: #ff9d7a; border: 1px solid rgba(194,59,28,0.45); }
 .badge-info { background: rgba(138,109,47,0.2); color: #d9c383; border: 1px solid rgba(138,109,47,0.5); }
 
-/* ===== Grid layouts ===== */
+
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -431,7 +429,7 @@ main {
   .grid-2, .grid-3 { grid-template-columns: 1fr; }
 }
 
-/* ===== Game frame ===== */
+
 .game-frame-wrap {
   border-radius: var(--radius);
   overflow: hidden;
@@ -459,7 +457,7 @@ main {
 
 .game-placeholder .icon { font-size: 3rem; margin-bottom: 14px; }
 
-/* ===== Download list ===== */
+
 .download-item {
   display: flex;
   align-items: center;
@@ -507,7 +505,7 @@ main {
 }
 .download-info span { color: var(--text-dim); font-size: 0.84rem; font-family: var(--font-body); }
 
-/* ===== Code block ===== */
+
 .code-block {
   background: #0a0603;
   border: 1px solid var(--glass-border);
@@ -586,7 +584,7 @@ main {
 .warning-box .icon { font-size: 1.25rem; }
 .warning-box p { color: #ffb9a3; margin: 0; font-family: var(--font-body); }
 
-/* ===== Footer ===== */
+
 footer {
   position: relative;
   z-index: 1;
@@ -628,7 +626,7 @@ footer {
   background: var(--glass-bg-strong);
 }
 
-/* ===== Section title ===== */
+
 .section-title {
   text-align: center;
   margin: 10px 0 34px;
@@ -647,7 +645,7 @@ footer {
   font-family: var(--font-body);
 }
 
-/* Mobile nav tweaks */
+
 @media (max-width: 900px) {
   header.navbar { flex-wrap: wrap; gap: 12px; }
   nav.nav-links { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; }
