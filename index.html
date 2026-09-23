@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="google-site-verification" content="kvF2S2k8AiFdcU-jjt-y1msxzTcGS13xdpzqvAvL0ZQ" />
   <link rel="icon" type="image/png" href="favicon.png" sizes="120x120">
 <title>Combat 3 Reborn</title>
@@ -64,33 +65,44 @@
       <p>Combat 3 i Combat 4 to przeglądarkowe gry działające na wtyczce <strong>Unity Web Player</strong>, popularne w latach 2013-2017. Po tym, jak Unity wycofało wsparcie dla Web Playera na rzecz WebGL, a oryginalne serwery gry zostały wyłączone, tytuł stał się niedostępny/bardzo ograniczony dla graczy.</p>
       <p style="margin-top:10px;">Projekt <strong>Combat 3 Reborn</strong> to nieoficjalna, fanowska inicjatywa społeczności, która odtwarza działanie gry - hostujemy pliki gry, udostępniamy niezbędne narzędzia, jak spatchowane pliki gry oraz prowadzimy Was, użytkowników krok po kroku przez konfigurację potrzebną do uruchomienia gry w dzisiejszych czasach.</p>
     </section>
+<section class="gallery-section glass-card">
+  <h2>Galeria</h2>
 
-    <section class="grid-3">
-      <section class="glass-card">
-        <h2>Graj teraz</h2>
-        <p>Uruchom Combat 3 bezpośrednio w przeglądarce. Pobierz Unity Web Player i kompatybilną przeglądarkę Basilisk.</p>
-        <a href="play.html" class="btn btn-ghost" style="margin-top:14px; width:100%; justify-content:center;">Przejdź do gry</a>
-      </section>
-      <section class="glass-card">
-        <h2> Poradnik</h2>
-        <p>Dowiedz się, jak skonfigurować plik <code>hosts</code>, aby połączyć się z serwerami Combat 3 Reborn.</p>
-        <a href="poradnik.html" class="btn btn-ghost" style="margin-top:14px; width:100%; justify-content:center;">Zobacz poradnik</a>
-      </section>
-      <section class="glass-card">
-        <h2> Pobieranie</h2>
-        <p>Pobierz pełne instalatory Combat 3 i Combat 4 wraz z niezbędnymi plikami do gry offline.</p>
-        <a href="pobieranie.html" class="btn btn-ghost" style="margin-top:14px; width:100%; justify-content:center;">Pobierz pliki</a>
-      </section>
-    </section>
+  <div class="gallery-main-wrap">
+    <button class="gallery-arrow gallery-prev" type="button" aria-label="Poprzedni plik">
+      ◀
+    </button>
 
-    <section class="glass-card">
+    <div class="gallery-main" id="galleryMain"></div>
+
+    <button class="gallery-arrow gallery-next" type="button" aria-label="Następny plik">
+      ▶
+    </button>
+  </div>
+
+  <div class="gallery-thumbs" id="galleryThumbs">
+    <button class="gallery-thumb" type="button" data-file="1.png"></button>
+
+    <button
+      class="gallery-thumb"
+      type="button"
+      data-file="https://www.youtube.com/watch?v=tNYt8a-lSEQ">
+    </button>
+<button
+      class="gallery-thumb"
+      type="button"
+      data-file="https://www.youtube.com/watch?v=f1wUnLz9-1w">
+    </button>
+    <button class="gallery-thumb" type="button" data-file="2.mp4"></button>
+  </div>
+</section>
+<section class="glass-card">
       <h2> Status projektu</h2>
       <span class="badge badge-live">Serwery społeczności Combat 3 Reborn aktywne</span>
       <span class="badge badge-info">Projekt fanowski</span>
       <p style="margin-top:14px;">To projekt prowadzony w pełni przez społeczność, niezwiązany oficjalnie z pierwotnymi twórcami Combat 3 / Combat 4, choć się z nimi skontaktowaliśmy. Wszystko odbywa się non-profit, w celu zachowania wspomnień o grze dzieciństwa wielu z nas.</p>
     </section>
-
-    <section class="glass-card" style="text-align:center;">
+     <section class="glass-card" style="text-align:center;">
       <h2 style="justify-content:center;"> Dołącz do społeczności</h2>
       <p>Aktualności, wsparcie techniczne i kontakt ze społecznością Combat 3 Reborn:</p>
       <section class="hero-cta" style="margin-top:20px;">
@@ -98,35 +110,212 @@
         <a href="https://www.tiktok.com/@combat3reborn" target="_blank" rel="noopener" class="btn btn-ghost"> TikTok</a>
         <a href="https://www.instagram.com/combat3_reborn/" target="_blank" rel="noopener" class="btn btn-ghost"> Instagram</a>
       </section>
-    </section>
-
   </main>
 
   <footer>
-    <section class="nav-logo-wrap" style="justify-content:center;">
-      <section class="nav-logo"><img src="logo.png"></section>
-      <section class="nav-title">Combat 3 <span>Reborn</span></section>
-    </section>
+    <img src="reborn-logo.png" alt="logotyp serwera Combat 3 Reborn" style="height: 30px;">
     <p style="margin-top:14px;">Nieoficjalny projekt społecznościowy mający na celu przywrócenie gier Combat 3 i Combat 4. Niezwiązany z NadGames.</p>
-    <section class="footer-socials">
-      <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" title="Discord" class="social-icon social-discord">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
-  </svg>
-</a>
-<a href="https://www.tiktok.com/@combat3reborn" target="_blank" rel="noopener" title="TikTok" class="social-icon social-tiktok">
-  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.58.07-5.37.01-4.03-.01-8.05.02-12.07Z"/>
-  </svg>
-</a>
-<a href="https://www.instagram.com/combat3_reborn/" target="_blank" rel="noopener" title="Instagram" class="social-icon social-instagram">
-  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-  </svg>
-</a>
-    </section>
     <p>&copy; 2026 Combat 3 Reborn - projekt fanowski. Wszystkie prawa do oryginalnej gry należą do NadGames.</p>
   </footer>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const mainWrap = document.getElementById('galleryMain');
+  const thumbButtons = Array.from(
+    document.querySelectorAll('.gallery-thumb')
+  );
+  const prevButton = document.querySelector('.gallery-prev');
+  const nextButton = document.querySelector('.gallery-next');
 
+  let currentIndex = 0;
+  let currentElement = null;
+  let isAnimating = false;
+
+  function isYouTube(fileName) {
+    return /youtube\.com|youtu\.be/i.test(fileName);
+  }
+
+  function isVideo(fileName) {
+    return /\.(mp4|webm|ogg)$/i.test(fileName);
+  }
+
+  function getYouTubeId(url) {
+    const match = url.match(
+      /(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([^?&/]+)/
+    );
+
+    return match ? match[1] : null;
+  }
+
+  function createMainElement(fileName) {
+    let element;
+
+    if (isYouTube(fileName)) {
+      const videoId = getYouTubeId(fileName);
+
+     element = document.createElement('iframe');
+
+element.src =
+  'https://www.youtube-nocookie.com/embed/' +
+  videoId +
+  '?rel=0';
+
+element.title = 'Film YouTube';
+element.referrerPolicy = 'strict-origin-when-cross-origin';
+
+element.allow =
+  'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+
+element.allowFullscreen = true;
+element.setAttribute('frameborder', '0');
+    } else if (isVideo(fileName)) {
+      element = document.createElement('video');
+      element.src = fileName;
+      element.controls = true;
+      element.autoplay = true;
+      element.loop = true;
+      element.muted = true;
+      element.playsInline = true;
+      element.preload = 'metadata';
+    } else {
+      element = document.createElement('img');
+      element.src = fileName;
+      element.alt = '';
+      element.draggable = false;
+    }
+
+    element.className = 'gallery-main-media';
+    return element;
+  }
+
+  function createThumbnail(fileName) {
+    const thumbMedia = document.createElement('div');
+    thumbMedia.className = 'gallery-thumb-media';
+
+    if (isYouTube(fileName)) {
+      const videoId = getYouTubeId(fileName);
+
+      thumbMedia.innerHTML =
+        '<img src="https://img.youtube.com/vi/' +
+        videoId +
+        '/mqdefault.jpg" alt="Miniatura filmu YouTube">' +
+        '<span class="gallery-youtube-icon">▶</span>';
+
+      return thumbMedia;
+    }
+
+    if (isVideo(fileName)) {
+      const video = document.createElement('video');
+      video.src = fileName;
+      video.muted = true;
+      video.playsInline = true;
+      video.preload = 'metadata';
+
+      thumbMedia.appendChild(video);
+      return thumbMedia;
+    }
+
+    const image = document.createElement('img');
+    image.src = fileName;
+    image.alt = '';
+    image.draggable = false;
+
+    thumbMedia.appendChild(image);
+    return thumbMedia;
+  }
+
+  function updateActiveThumbnail() {
+    thumbButtons.forEach((button, index) => {
+      button.classList.toggle('active', index === currentIndex);
+    });
+  }
+
+  function changeMainFile(direction) {
+    if (isAnimating || thumbButtons.length === 0) return;
+
+    isAnimating = true;
+
+    const fileName = thumbButtons[currentIndex].dataset.file;
+    const newElement = createMainElement(fileName);
+
+    const enteringClass =
+      direction === 'next'
+        ? 'gallery-enter-from-right'
+        : 'gallery-enter-from-left';
+
+    const leavingClass =
+      direction === 'next'
+        ? 'gallery-leave-to-left'
+        : 'gallery-leave-to-right';
+
+    newElement.classList.add(enteringClass);
+    mainWrap.appendChild(newElement);
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        newElement.classList.remove(enteringClass);
+        newElement.classList.add('gallery-media-visible');
+
+        if (currentElement) {
+          currentElement.classList.add(leavingClass);
+        }
+      });
+    });
+
+    setTimeout(() => {
+      if (currentElement) {
+        currentElement.remove();
+      }
+
+      currentElement = newElement;
+      updateActiveThumbnail();
+      isAnimating = false;
+    }, 400);
+  }
+
+  function showNextFile() {
+    if (isAnimating) return;
+
+    currentIndex = (currentIndex + 1) % thumbButtons.length;
+    changeMainFile('next');
+  }
+
+  function showPreviousFile() {
+    if (isAnimating) return;
+
+    currentIndex =
+      (currentIndex - 1 + thumbButtons.length) %
+      thumbButtons.length;
+
+    changeMainFile('prev');
+  }
+
+  thumbButtons.forEach((button, index) => {
+    const fileName = button.dataset.file;
+
+    button.appendChild(createThumbnail(fileName));
+    button.classList.toggle('active', index === 0);
+
+    button.addEventListener('click', () => {
+      if (index === currentIndex || isAnimating) return;
+
+      const direction = index > currentIndex ? 'next' : 'prev';
+      currentIndex = index;
+      changeMainFile(direction);
+    });
+  });
+
+  prevButton.addEventListener('click', showPreviousFile);
+  nextButton.addEventListener('click', showNextFile);
+
+  if (thumbButtons.length > 0) {
+    currentElement = createMainElement(
+      thumbButtons[0].dataset.file
+    );
+
+    currentElement.classList.add('gallery-media-visible');
+    mainWrap.appendChild(currentElement);
+  }
+});
+</script>
 </body>
 </html>
