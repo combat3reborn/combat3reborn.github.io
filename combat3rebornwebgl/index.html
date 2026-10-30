@@ -8,49 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
-    <meta name="robots" content="noindex, nofollow">
     <script>
-      async function loadAndMergeData() {
-        try {
-          console.log("Pobieranie 9 części pliku data...");
-          
-          const totalParts = 9;
-          const partPromises = [];
-
-          for (let i = 1; i <= totalParts; i++) {
-            // Jawne sformatowanie numeru na 3 cyfry jako zwykły string
-            let partStr = (i < 10 ? "00" + i : (i < 100 ? "0" + i : "" + i));
-            let url = "Build/combat3reborn.data.zip." + partStr;
-            
-            partPromises.push(
-              fetch(url).then(function(res) {
-                if (!res.ok) throw new Error("Nie udało się pobrać pliku: " + url);
-                return res.blob();
-              })
-            );
-          }
-
-          const blobs = await Promise.all(partPromises);
-          const combinedBlob = new Blob(blobs, { type: "application/octet-stream" });
-          const combinedUrl = URL.createObjectURL(combinedBlob);
-
-          console.log("Wszystkie części złączone pomyślnie, ładowanie gry...");
-
-          const jsonRes = await fetch("Build/combat3reborn.json");
-          if (!jsonRes.ok) throw new Error("Nie znaleziono pliku JSON konfiguracji!");
-          const configData = await jsonRes.json();
-
-          configData.dataUrl = combinedUrl;
-
-          var gameInstance = UnityLoader.instantiate("gameContainer", configData, {onProgress: UnityProgress});
-
-        } catch (err) {
-          console.error("Błąd podczas pobierania lub łączenia części gry:", err);
-          alert("Błąd ładowania gry. Sprawdź konsolę (F12).");
-        }
-      }
-
-      window.addEventListener("DOMContentLoaded", loadAndMergeData);
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/combat3reborn.json", {onProgress: UnityProgress});
     </script>
     <style>
       html, body {
@@ -74,11 +33,11 @@
         width: 1000px !important;
         margin: 0 !important;
       }
-      .title,.fullscreen{
+      .title, .fullscreen {
         background-color: black;
         color: whitesmoke;
       }
-      *{
+      * {
         background-color: black;
       }
     </style>
