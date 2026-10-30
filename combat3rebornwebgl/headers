@@ -1,0 +1,12 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+
+/*.unityweb
+  Content-Type: application/octet-stream
+
+/*.json
+  Content-Type: application/json
+/Build/*
+  Cache-Control: public, max-age=31536000, immutable

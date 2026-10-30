@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Combat 3 Reborn WebGL Port</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <meta name="robots" content="noindex, nofollow">
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/combat3reborn.json", {onProgress: UnityProgress});
+    </script>
+    <style>
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: transparent !important;
+        background-color: transparent !important;
+        overflow: hidden;
+      }
+      .webgl-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 0 !important;
+        background: transparent !important;
+      }
+      .footer {
+        width: 1000px !important;
+        margin: 0 !important;
+      }
+      .title,.fullscreen{
+        background-color: black;
+        color: whitesmoke;
+      }
+      *{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1000px; height: 600px;"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Combat 3 Reborn - unofficial WebGL port</div>
+      </div>
+    </div>
+  </body>
+</html>
