@@ -18,16 +18,9 @@
           const partPromises = [];
 
           for (let i = 1; i <= totalParts; i++) {
-            let partStr = i < 10 ? "00" + i : "010"; 
-            if (i < 10) {
-              partStr = "00" + i;
-            } else if (i < 100) {
-              partStr = "0" + i;
-            } else {
-              partStr = "" + i;
-            }
-            
-            const url = "Build/combat3reborn.data.zip." + partStr;
+            // Jawne sformatowanie numeru na 3 cyfry jako zwykły string
+            let partStr = (i < 10 ? "00" + i : (i < 100 ? "0" + i : "" + i));
+            let url = "Build/combat3reborn.data.zip." + partStr;
             
             partPromises.push(
               fetch(url).then(function(res) {
@@ -44,6 +37,7 @@
           console.log("Wszystkie części złączone pomyślnie, ładowanie gry...");
 
           const jsonRes = await fetch("Build/combat3reborn.json");
+          if (!jsonRes.ok) throw new Error("Nie znaleziono pliku JSON konfiguracji!");
           const configData = await jsonRes.json();
 
           configData.dataUrl = combinedUrl;
@@ -52,7 +46,7 @@
 
         } catch (err) {
           console.error("Błąd podczas pobierania lub łączenia części gry:", err);
-          alert("Nie udało się załadować podzielonych plików gry. Sprawdź konsolę (F12).");
+          alert("Błąd ładowania gry. Sprawdź konsolę (F12).");
         }
       }
 
