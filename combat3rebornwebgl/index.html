@@ -18,9 +18,16 @@
           const partPromises = [];
 
           for (let i = 1; i <= totalParts; i++) {
-            // Bezpieczne sformatowanie numeru na 3 cyfry (np. "001", "002"...)
-            const partNum = String(i).padStart(3, '0');
-            const url = "Build/combat3reborn.data.zip." + partNum;
+            let partStr = i < 10 ? "00" + i : "010"; 
+            if (i < 10) {
+              partStr = "00" + i;
+            } else if (i < 100) {
+              partStr = "0" + i;
+            } else {
+              partStr = "" + i;
+            }
+            
+            const url = "Build/combat3reborn.data.zip." + partStr;
             
             partPromises.push(
               fetch(url).then(function(res) {
