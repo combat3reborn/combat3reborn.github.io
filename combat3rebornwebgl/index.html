@@ -17,19 +17,20 @@
           const totalParts = 9;
           const partPromises = [];
 
-          
           for (let i = 1; i <= totalParts; i++) {
-            const partNum = String(i).padStart(3, '0'); 
-            const url = `Build/combat3reborn.data.zip.${partNum}`;
-            partPromises.push(fetch(url).then(res => {
-              if (!res.ok) throw new Error(`Nie udało się pobrać pliku: ${url}`);
-              return res.blob();
-            }));
+            // Bezpieczne sformatowanie numeru na 3 cyfry (np. "001", "002"...)
+            const partNum = String(i).padStart(3, '0');
+            const url = "Build/combat3reborn.data.zip." + partNum;
+            
+            partPromises.push(
+              fetch(url).then(function(res) {
+                if (!res.ok) throw new Error("Nie udało się pobrać pliku: " + url);
+                return res.blob();
+              })
+            );
           }
 
-          
           const blobs = await Promise.all(partPromises);
-
           const combinedBlob = new Blob(blobs, { type: "application/octet-stream" });
           const combinedUrl = URL.createObjectURL(combinedBlob);
 
@@ -37,7 +38,6 @@
 
           const jsonRes = await fetch("Build/combat3reborn.json");
           const configData = await jsonRes.json();
-
 
           configData.dataUrl = combinedUrl;
 
