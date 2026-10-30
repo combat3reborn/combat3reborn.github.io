@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Combat 3 Reborn WebGL Port</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <meta name="robots" content="noindex, nofollow">
+    <script>
+      async function loadAndMergeData() {
+        try {
+          console.log("Pobieranie 9 części pliku data...");
+          
+          const totalParts = 9;
+          const partPromises = [];
+
+          
+          for (let i = 1; i <= totalParts; i++) {
+            const partNum = String(i).padStart(3, '0'); 
+            const url = `Build/combat3reborn.data.zip.${partNum}`;
+            partPromises.push(fetch(url).then(res => {
+              if (!res.ok) throw new Error(`Nie udało się pobrać pliku: ${url}`);
+              return res.blob();
+            }));
+          }
+
+          
+          const blobs = await Promise.all(partPromises);
+
+          const combinedBlob = new Blob(blobs, { type: "application/octet-stream" });
+          const combinedUrl = URL.createObjectURL(combinedBlob);
+
+          console.log("Wszystkie części złączone pomyślnie, ładowanie gry...");
+
+          const jsonRes = await fetch("Build/combat3reborn.json");
+          const configData = await jsonRes.json();
+
+
+          configData.dataUrl = combinedUrl;
+
+          var gameInstance = UnityLoader.instantiate("gameContainer", configData, {onProgress: UnityProgress});
+
+        } catch (err) {
+          console.error("Błąd podczas pobierania lub łączenia części gry:", err);
+          alert("Nie udało się załadować podzielonych plików gry. Sprawdź konsolę (F12).");
+        }
+      }
+
+      window.addEventListener("DOMContentLoaded", loadAndMergeData);
+    </script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: transparent !important;
+        background-color: transparent !important;
+        overflow: hidden;
+      }
+      .webgl-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px !important;
+        height: auto !important;
+        transform: none !important;
+        margin: 0 !important;
+        background: transparent !important;
+      }
+      .footer {
+        width: 1000px !important;
+        margin: 0 !important;
+      }
+      .title,.fullscreen{
+        background-color: black;
+        color: whitesmoke;
+      }
+      *{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1000px; height: 600px;"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="if(typeof gameInstance !== 'undefined') gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Combat 3 Reborn - unofficial WebGL port</div>
+      </div>
+    </div>
+  </body>
+</html>
