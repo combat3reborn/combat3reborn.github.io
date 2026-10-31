@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="google-site-verification" content="kvF2S2k8AiFdcU-jjt-y1msxzTcGS13xdpzqvAvL0ZQ" />
   <link rel="icon" type="image/png" href="favicon.png" sizes="120x120">
   <title>Combat 3 Reborn</title>
-  <meta name="description" content="Fanowski projekt przywracający przeglądarkowe gry FPS Combat 3 i Combat 4 z lat 2013–2017.">
+  <meta name="description" content="Fanowski projekt przywracający przeglądarkowe gry FPS Combat 3 i Combat 4 z lat 2013-2017.">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,57 +20,52 @@
       <section class="nav-title"><img src="reborn-logo.png" alt="logotyp serwera Combat 3 Reborn" style="height: 70px;"></section>
     </section>
     <nav class="nav-links">
-      <a href="index.html" class="active">Strona główna</a>
-      <a href="webgl.html">Wersja WebGL</a>
-      <a href="play.html">Graj (Basilisk)</a>
-      <a href="poradnik.html">Poradnik</a>
-      <a href="pobieranie.html">Pobieranie</a>
+      <a href="index.html" class="active" data-i18n="nav_home">Strona główna</a>
+      <a href="webgl.html" data-i18n="nav_webgl">Wersja WebGL</a>
+      <a href="play.html" data-i18n="nav_play">Graj (Basilisk)</a>
+      <a href="poradnik.html" data-i18n="nav_guide">Poradnik</a>
+      <a href="pobieranie.html" data-i18n="nav_download">Pobieranie</a>
     </nav>
     <section class="nav-socials">
       <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" title="Discord" class="social-icon social-discord">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.8851-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 0 0-.0785-.037 19.7363 19.7363 0 0 0-4.8852 1.515.0699.0699 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 0 0 .0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 0 0-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 0 1-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 0 1 .0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 0 1 .0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 0 1-.0066.1276 12.2986 12.2986 0 0 1-1.873.8914.0766.0766 0 0 0-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 0 0 .0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 0 0 .0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 0 0-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
       </a>
       <a href="https://www.tiktok.com/@combat3reborn" target="_blank" rel="noopener" title="TikTok" class="social-icon social-tiktok">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.58.07-5.37.01-4.03-.01-8.05.02-12.07Z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.58.07-5.37.01-4.03-.01-8.05.02-12.07Z"/></svg>
       </a>
       <a href="https://www.instagram.com/combat3_reborn/" target="_blank" rel="noopener" title="Instagram" class="social-icon social-instagram">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-        </svg>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
       </a>
-    </section>
-     <div class="lang-switch">
+      <!-- Language Switcher -->
+      <div class="lang-switch">
         <button onclick="setLanguage('pl')" data-lang="pl" title="Polski">🇵🇱</button>
         <button onclick="setLanguage('en')" data-lang="en" title="English">🇬🇧</button>
         <button onclick="setLanguage('es')" data-lang="es" title="Español">🇪🇸</button>
-        <script src="lang.js"></script>
       </div>
+    </section>
   </header>
 
   <section class="hero">
     <section class="hero-logo"><img src="logo.png" alt="logotyp serwera Combat 3 Reborn"></section>
-    <h1>Combat 3 <span>Reborn</span></h1>
-    <p class="subtitle">Przywracamy przeglądarkowe strzelanki <strong>Combat 3</strong> i <strong>Combat 4</strong> z lat 2013–2017. Oryginalne serwery zostały wyłączone, a wtyczka Unity Web Player zniknęła z przeglądarek. Tutaj zagrasz ponownie przez nowy port WebGL, klienta na PC lub przeglądarkę Basilisk.</p>
+    <h1>Combat 3 <span data-i18n="hero_reborn">Reborn</span></h1>
+    <p class="subtitle" data-i18n="hero_sub">Przywracamy przeglądarkowe strzelanki <strong>Combat 3</strong> i <strong>Combat 4</strong> z lat 2013–2017. Oryginalne serwery zostały wyłączone, a wtyczka Unity Web Player zniknęła z przeglądarek. Tutaj zagrasz ponownie przez nowy port WebGL, klienta na PC lub przeglądarkę Basilisk.</p>
     <section class="hero-cta">
-      <a href="webgl.html" class="btn btn-primary">Graj w przeglądarce (WebGL)</a>
-      <a href="pobieranie.html" class="btn btn-ghost">Pobierz na PC (.exe)</a>
-      <a href="poradnik.html" class="btn btn-ghost">Poradnik konfiguracji</a>
+      <a href="webgl.html" class="btn btn-primary" data-i18n="btn_webgl">Graj w przeglądarce (WebGL)</a>
+      <a href="pobieranie.html" class="btn btn-ghost" data-i18n="btn_pc">Pobierz na PC (.exe)</a>
+      <a href="poradnik.html" class="btn btn-ghost" data-i18n="btn_guide">Poradnik konfiguracji</a>
     </section>
   </section>
 
   <main>
     <section class="glass-card">
-      <h2>O projekcie</h2>
-      <p>Combat 3 i Combat 4 wymagały wtyczki <strong>Unity Web Player</strong>. Po wycofaniu obsługi standardu NPAPI w przeglądarkach i wyłączeniu serwerów NadGames obie gry przestały działać.</p>
-      <p style="margin-top:10px;"><strong>Combat 3 Reborn</strong> utrzymuje nowe serwery, udostępnia gotowe instalatory niewymagające zmian w systemie oraz przepisuje grę na WebGL, żeby działała bezpośrednio w obecnych przeglądarkach.</p>
+      <h2 data-i18n="about_title">O projekcie</h2>
+      <p data-i18n="about_p1">Combat 3 i Combat 4 wymagały wtyczki <strong>Unity Web Player</strong>. Po wycofaniu obsługi standardu NPAPI w przeglądarkach i wyłączeniu serwerów NadGames obie gry przestały działać.</p>
+      <p style="margin-top:10px;" data-i18n="about_p2"><strong>Combat 3 Reborn</strong> utrzymuje nowe serwery, udostępnia gotowe instalatory niewymagające zmian w systemie oraz przepisuje grę na WebGL, żeby działała bezpośrednio w obecnych przeglądarkach.</p>
     </section>
 
     <section class="gallery-section glass-card">
-      <h2>Galeria</h2>
+      <h2 data-i18n="gallery_title">Galeria</h2>
+      <h3 style="margin-bottom: 20px; text-transform:none; font-size:1.1rem; color:var(--text-dim);" data-i18n="playlist_title">Playlista wszystkich filmów z Combat3 przygotowana przez JuL0_PL</h3>
 
       <div class="gallery-main-wrap">
         <button class="gallery-arrow gallery-prev" type="button" aria-label="Poprzedni plik">◀</button>
@@ -80,21 +74,20 @@
       </div>
 
       <div class="gallery-thumbs" id="galleryThumbs">
-        <button class="gallery-thumb" type="button" data-file="https://www.youtube.com/watch?v=tNYt8a-lSEQ"></button>
-        <button class="gallery-thumb" type="button" data-file="https://www.youtube.com/watch?v=f1wUnLz9-1w"></button>
+        <button class="gallery-thumb" type="button" data-file="1.png"></button>
       </div>
     </section>
 
     <section class="glass-card">
-      <h2>Status</h2>
-      <span class="badge badge-live">Serwery aktywne</span>
-      <span class="badge badge-info">Projekt non-profit</span>
-      <p style="margin-top:14px;">Projekt jest w całości niekomercyjny i tworzony przez graczy. Skontaktowaliśmy się z oryginalnymi twórcami z NadGames, ale działamy niezależnie.</p>
+      <h2 data-i18n="status_title">Status</h2>
+      <span class="badge badge-live" data-i18n="badge_servers">Serwery aktywne</span>
+      <span class="badge badge-info" data-i18n="badge_nonprofit">Projekt non-profit</span>
+      <p style="margin-top:14px;" data-i18n="status_p">Projekt jest w całości niekomercyjny i tworzony przez graczy. Skontaktowaliśmy się z oryginalnymi twórcami z NadGames, ale działamy niezależnie.</p>
     </section>
 
     <section class="glass-card" style="text-align:center;">
-      <h2 style="justify-content:center;">Społeczność</h2>
-      <p>Aktualizacje, zgłaszanie błędów i umawianie się na gry:</p>
+      <h2 style="justify-content:center;" data-i18n="comm_title">Społeczność</h2>
+      <p data-i18n="comm_p">Aktualizacje, zgłaszanie błędów i umawianie się na gry:</p>
       <section class="hero-cta" style="margin-top:20px;">
         <a href="https://discord.gg/sVax9vfBBq" target="_blank" rel="noopener" class="btn btn-primary">Discord</a>
         <a href="https://www.tiktok.com/@combat3reborn" target="_blank" rel="noopener" class="btn btn-ghost">TikTok</a>
@@ -105,9 +98,10 @@
 
   <footer>
     <img src="reborn-logo.png" alt="logotyp serwera Combat 3 Reborn" style="height: 30px;">
-    <p style="margin-top:14px;">Nieoficjalny projekt fanowski przywracający gry Combat 3 i Combat 4. Niezwiązany z NadGames.</p>
-    <p>&copy; 2026 Combat 3 Reborn. Prawa do oryginalnych gier należą do NadGames.</p>
+    <p style="margin-top:14px;" data-i18n="footer_1">Nieoficjalny projekt fanowski przywracający gry Combat 3 i Combat 4. Niezwiązany z NadGames.</p>
+    <p data-i18n="footer_2">&copy; 2026 Combat 3 Reborn. Prawa do oryginalnych gier należą do NadGames.</p>
   </footer>
+  <script src="lang.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const mainWrap = document.getElementById('galleryMain');
@@ -245,6 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
     changeMainFile('next');
   });
 
+  // Fetch playlist randomly
   fetch('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fplaylist_id%3DPLLRqS0UitKMtsEkhO8gNXSiZeAESUxchs')
     .then(res => res.json())
     .then(data => {
